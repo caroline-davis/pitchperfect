@@ -17,7 +17,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     var audioRecorder: AVAudioRecorder!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         stopRecordingButton.enabled = false
@@ -49,6 +48,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.prepareToRecord()
         audioRecorder.record()
     }
+    
     @IBAction func stopRecording(sender: AnyObject) {
         print("Stop Recording Button")
         recordButton.enabled = true
@@ -58,6 +58,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
     }
+    
     override func viewWillAppear(animated: Bool) {
         print("viewWillAppear called")
     }
@@ -70,6 +71,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             print("Saving of recording failed")
         }
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         print(segue.identifier)
         if (segue.identifier == "stopRecording") {
