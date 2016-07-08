@@ -69,7 +69,7 @@
                         <viewControllerLayoutGuide type="top" id="CgZ-Yg-HgL"/>
                         <viewControllerLayoutGuide type="bottom" id="f52-qO-qos"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uuc-9X-TKc">
+                    <view key="view" contentMode="scaleAspectFit" id="Uuc-9X-TKc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
